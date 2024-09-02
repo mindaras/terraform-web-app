@@ -1,0 +1,11 @@
+// used for backend migration should be excluded from .git
+
+terraform {
+  cloud {
+    organization = "deep-dive-mindaras"
+
+    workspaces {
+      name = "web-network-dev"
+    }
+  }
+}
